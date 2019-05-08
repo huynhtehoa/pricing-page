@@ -17,7 +17,6 @@
 
 .cart-box {
     border: 1px solid lightgray;
-    margin-top: 1rem;
 }
 
 .cart-box * {
@@ -26,7 +25,6 @@
 }
 
 .cart {
-    padding: 0.5rem 1rem;
     border-bottom: 1px solid lightgray;
 }
 
@@ -34,23 +32,13 @@
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    padding: 1rem 0;
 }
 
 .promo {
-    padding: 0.5rem 1rem;
     border-bottom: 1px solid lightgray;
     color: green;
-}
-
-.final-cart {
-    padding: 0.5rem 1rem;
-    padding-bottom: 0;
 }
 
 footer {
     text-align: center;
 }
-
-
-
