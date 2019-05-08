@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/hViW80o.png">
+    <title>Checkout Form</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <header>
+        <div class="container text-center py-4 mx-auto">
+            <img class="my-2" src="http://i.imgur.com/hViW80o.png" alt="CS-logo" />
+            <h1 class="text-danger display-4 font-weight-normal">
+                Checkout form
+            </h1>
+            <p class="lead">
+                Below is an example form built entirely with Bootstrap's form controls. Each requitred form group has a
+                validation statethat can be triggered by attempting to submit the form without completing it.
+            </p>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md">
+                    <form>
+                        <label class="font-weight-bold pb-2">Billing address</label>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="validationCustom01">First Name</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="validationCustom02">Last Name</label>
+                                <input type="password" class="form-control" id="validationCustom02"
+                                    placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="validationCustomUsername">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="validationCustomUsername"
+                                    placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress1">Address 1</label>
+                            <input type="text" class="form-control" id="inputAddress1"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">Address 2 (Optional)</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group py-4">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Shipping address is the same as
+                                    my billing address</label>
+                            </div>
+                            <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Save this information for next
+                                    time</label>
+                            </div>
+                        </div>
+                        <label class="font-weight-bold pb-2">Payment</label>
+                        <div class="form-group">
+                            <div class="custom-control custom-radio custom-control">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">Credit card</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Debit card</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control">
+                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio3">Paypal</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nameoncard">Name on card</label>
+                                <input type="text" class="form-control" id="nameoncard">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="cardnumber">Credit card number</label>
+                                <input type="number" class="form-control" id="cardnumber">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="exp">Expiration</label>
+                                <input type="date" class="form-control" id="exp">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="cvc">CVC</label>
+                                <input type="number" class="form-control" id="cvc">
+                            </div>
+                        </div>
+                        <div class="form-group py-5">
+                            <button type="submit" class="btn btn-danger btn-block">Continue to checkout</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4">
+                    <div class="your-cart">
+                        <span class="text-muted font-weight-bold">Your cart</span>
+                        <span class="amount px-2">3</span>
+                    </div>
+                    <div class="cart-box">
+                        <div class="cart">
+                            <ul class="item">
+                                <li>Product name</li>
+                                <li class="text-muted">4.9 M</li>
+                            </ul>
+                            <p class="text-muted">Wed Design Bootcamp</p>
+                        </div>
+                        <div class="cart">
+                            <ul class="item">
+                                <li>Second product</li>
+                                <li class="text-muted">14. 9M</li>
+                            </ul>
+                            <p class="text-muted">React + React Native</p>
+                        </div>
+                        <div class="cart">
+                            <ul class="item">
+                                <li>Third item</li>
+                                <li class="text-muted">14.9 M</li>
+                            </ul>
+                            <p class="text-muted">Machine Learning</p>
+                        </div>
+                        <div class="promo">
+                            <ul class="item">
+                                <li>Promo code</li>
+                                <li>- 7.5 M</li>
+                            </ul>
+                            <p>EXAMPLECODE</p>
+                        </div>
+                        <div class="final-cart">
+                            <ul class="item">
+                                <li>Toltal (VND)</li>
+                                <li class="font-weight-bold">27.2 M</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form class="form-inline mt-4">
+                        <div class="form-group border border-gray p-2">
+                            <input type="text" class="form-control" id="promocode" placeholder="Promo Code">
+                            <button type="submit" class="btn btn-dark">Redeem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
